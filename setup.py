@@ -1,10 +1,14 @@
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name='xlsxToJsonTranslate',
-    version='0.1.0',
+    version='0.1.3',
     description='Convert xlsx file to a json object. Build for i18n angular apps',
-    long_description=open('README.rst', 'rt', encoding='utf-8').read(),
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/EtiennePasteur/xlsxToJsonTranslate',
     license="MIT",
     classifiers=[
@@ -24,11 +28,12 @@ setup(
     author_email="me@etiennepasteur.com",
     zip_safe=True,
     scripts=[
-        'xlsxToJsonTranslate.py',
+        'xlsxToJsonTranslate',
     ],
     install_requires=[
         "unflatten~=0.1",
         "deepmerge~=0.1.0",
         "xlrd~=1.2.0",
+        "simplejson~=3.17.0"
     ],
 )

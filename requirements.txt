@@ -1,3 +1,4 @@
 unflatten~=0.1
 deepmerge~=0.1.0
 xlrd~=1.2.0
+simplejson~=3.17.0
