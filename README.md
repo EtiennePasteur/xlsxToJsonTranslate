@@ -1,6 +1,6 @@
 # xlsxToJsonTranslate
 
-Simple tool to convert xlsx file to a json object. Build for i18n angular apps
+Simple tool to convert xlsx file to a json object. Built for i18n angular apps
 
 ### Usage
 ```bash
